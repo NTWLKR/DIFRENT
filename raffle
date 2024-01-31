@@ -1,0 +1,12 @@
+# Create a list of raffle participants
+participants = ["Alice", "Bob", "Carol", "Dave", "Eve"]
+
+# Choose a random winner
+winner = random.choice(participants)
+
+# Print the winner's name
+print("The winner of the raffle is", winner)
+
+# Save the winner's name to a file
+with open("winner.txt", "w") as f:
+    f.write(winner)
